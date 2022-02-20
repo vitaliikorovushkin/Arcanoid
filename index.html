@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arcanoid</title>
+    <link href="css/styles.css" rel="stylesheet"/>  
+  	<script src="js/scripts.js"></script>
+</head>
+<body onmousemove="movePad()" onload="loadGame()">
+	<div id="field">
+        <img src="images/ball.png" width="32" id="ball" alt="ball"/>
+        <div id="pad"></div>
+    </div>
+	<table class="infoGame">
+        <tr>
+            <td>Lives:</td>
+            <td><label id="livesID">0</label></td>
+        </tr>
+        <tr>
+            <td>Level:</td>
+            <td><label id="levelID">0</label></td>
+        </tr>
+        <tr>
+            <td>Points:</td>
+            <td><label id="scoreID">0</label></td>
+        </tr>
+        <tr>
+            <td><button id="btnNewGame" onclick="newGame()" >New Game</button></td>
+            <td><button id="btnPlayPause" onclick="pauseGame()">Pause</button></td>
+        </tr>
+    </table>
+</body>
+</html>
